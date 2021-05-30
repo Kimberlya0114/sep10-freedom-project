@@ -31,10 +31,22 @@
             
          }
         
-         .body {
-             background:#6F91A6
-         }
-
+        .navbar{
+            width:100;
+            padding-top:5px;
+      
+        }
+        
+        .container{
+            padding-top:45px!important;
+            padding-bottom:25px;
+        }
+        
+        .body{
+            background-color:#6F91A6;
+        }
+        
+      
         </style>
 
         <title>Title</title>
@@ -45,7 +57,7 @@
          <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="images/MRI.jpg" class="d-block w-100" alt="mri machine">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Medical Equipment</h5>
                 <p>Learn about the Past and what coulb be the Future of MRI Machines</p>
               </div>
@@ -56,65 +68,100 @@
     
     
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Content</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Problem</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href="#">Improvements</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href="#">Before and Now</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href="#">Solutions</a>
-                </li>
+            <div class="container-fluid">
+                <div class= "navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Content</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Problem</a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" href="#">Improvements</a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" href="#">Before and Now</a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" href="#">Solutions</a>
+                        </li>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
         
-   
-   
-   
-    <div class= "contanier-fluid">
-        <div class= "container">
-            <div class="col-md-6">
-                <h3>Content</h3>
-                    <ul>
-                        <li>Medical Equipment had been around for over hundreds of year but the MRI Machine has not been around for that long so it still has some problems that can be fixed but it has also made many improvements thanks to technology </li>
-                        <li>The first MRI machine was created by Raymond Damadian in 1997</li>
-                        <li>MRI stands for Magnetic resonance imaging</li>
-                        <li>MRI machines are used in the medical industry to help doctors get precise imaging of the inside of someone's body</li>
-                        <li>It is very important for MRI machines to be safe because in the United states alone it gets used over 40 Million times in a year.</li>
-                    </ul>
+
+        
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <h3>Content</h3>
+                        <ul>
+                            <li>Medical equipment has been around for hundreds of years, but the MRI machine has only been around for a few years, so it still has some issues that can be resolved, but it has also made many improvements thanks to technology. </li>
+                            <li>The first MRI machine was created by Raymond Damadian in 1997</li>
+                            <li>MRI stands for Magnetic resonance imaging</li>
+                            <li>MRI machines are used in the medical industry to help doctors get precise imaging of the inside of someone's body</li>
+                            <li>It is very important for MRI machines to be safe because in the United states alone it gets used over 40 Million times in a year.</li>
+                        </ul>
+                </div>
+                <div class="col">
+                    <img src="images/scan.jpg" alt="Mri scans" width="567" hight="100">
+                </div>
             </div>
-            
-            <div class="col-md-6">
-                <img src="images/scan.jpg" class="rounded float-end" alt="Mri scans">
-            </div>
-                
-            
-                
-            
-            
+        </div>
+    </div>
+    
+    
+    
+    <div class="container">
+        <div class= "col">
+            <h3>Problem</h3>
+            <p>MRI scans can transmits radiation to someone when it is being used.</p>
+            <p>This is a bad thing because radiation can cause health problems like cancer and cardiovascular diseases</p>
+        </div>
+        <div class="col">
+             <img src="images/problem.jpg" alt="scan problem" width="300" hight="100">
         </div>
     </div>
 
-
-
-
+   <div class= "container">
+       <div clss="col">
+           <h3>Improvements Made</h3>
+           <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">Skills</button>
+              <button class="btn btn-primary" type="button">Types of scans</button>
+        </div>
+       </div>
+   </div>
+   
+   
+   <div class= "container">
+       <div class="col">
+           <h3> Before and Now</h3>
+                <img src="images/old.jpg" alt="old mri" width="300" height="200">
+                <img src="images/new.jpg"  alt="new mri" width="300" height="200">
+       </div>
+   </div>
+   
+   
+   <div class="container">
+       <div class="col">
+           <h3>Possible Solution</h3>
+               <dl>
+                   <dt> MRI machine that when it is being used will automatically open up a shield protector to protect the Patient from the radiation the machine is transmitting.</dt>
+                   <dd>-Technology will then be need to program the software of the MRI Machine so that it knowns to open the shield when it is being used </dd>
+                   <dd>-The shield will be made with the element tungsten, and bismuth because these elements can block radiation</dd>
+               </dl>
+       </div>
+   </div>
 
 
 
