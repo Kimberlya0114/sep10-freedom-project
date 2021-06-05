@@ -12,8 +12,12 @@
             /* CSS */
 
          .carousel-item {
-             height: 31rem;
-             opacity: 0.8;
+             opacity:0.9;
+             top:0;
+             bottom:0;
+             left:0;
+             right:0;
+             background:rgba(0,0,0,0.6);
          }
          
          .carousel-caption {
@@ -22,12 +26,14 @@
 
          .carousel-caption h5{
              font-weight:700;
-             font-size: 60px;
+             font-size: 100px;
+             font-family: poppins;
          }
          
          .carousel-caption p{
              font-weight:200;
-             font-size: 31px;
+             font-size: 25px;
+            
             
          }
          
@@ -38,6 +44,7 @@
         .navbar{
             width:100;
             padding-top:5px;
+            font-family: poppins;
       
         }
         
@@ -46,10 +53,50 @@
             padding-bottom:25px;
         }
         
-        .body{
-            background-color:#6F91A6!important;
+    
+           
+
+        
+        
+        #content {
+            font-family: PTSerif;
+             background-color:#ADCCD9;
+             margin-top:35px;
         }
         
+         #problem {
+            font-family: PTSerif;
+             background-color: #6F91A6;
+             margin-top:35px;
+            
+        }
+         #improvements {
+            font-family: PTSerif;
+             background-color: #689BA6;
+             margin-top:35px;
+             
+        }
+         #beforeandnow {
+            font-family: PTSerif;
+             background-color:#ADCCD9;
+             margin-top:35px;
+             
+        
+        }
+         #solutions {
+            font-family: PTSerif;
+             background-color:#6F91A6;
+             margin-top:35px;
+    
+        }
+        
+        
+       .body{
+    background-color: #254559;
+           
+       }
+            
+
       
         </style>
 
@@ -65,7 +112,7 @@
                   <img src="images/MRI.jpg" class="d-block w-100" alt="mri machine">
                   <div class="carousel-caption">
                     <h5>Medical Equipment</h5>
-                    <p>Learn about the Past and what coulb be the Future of MRI Machines</p>
+                    <p>Learn about the Past and what could be the Future of MRI Machines</p>
                   </div>
                 </div>
              </div>
@@ -73,7 +120,7 @@
     
     
     
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class= "navbar">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,19 +132,19 @@
                           <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Content</a>
+                          <a class="nav-link" href="#content">Content</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Problem</a>
+                          <a class="nav-link" href="#problem">Problem</a>
                         </li>
                          <li class="nav-item">
-                          <a class="nav-link" href="#">Improvements</a>
+                          <a class="nav-link" href="#improvements">Improvements</a>
                         </li>
                          <li class="nav-item">
-                          <a class="nav-link" href="#">Before and Now</a>
+                          <a class="nav-link" href="#beforeandnow">Before and Now</a>
                         </li>
                          <li class="nav-item">
-                          <a class="nav-link" href="#">Solutions</a>
+                          <a class="nav-link" href="#solutions">Solutions</a>
                         </li>
                     </div>
                 </div>
@@ -106,11 +153,10 @@
     
         
 
-        
-    <div class="container">
+    <div id="content" class="container"> 
         <div class="row">
-            <div class="col">
-                    <h3>Content</h3>
+            <div class="col-lg-5 col-sm-6">
+                <h3>Context</h3>
                         <ul>
                             <li>Medical equipment has been around for hundreds of years, but the MRI machine has only been around for a few years, so it still has some issues that can be resolved, but it has also made many improvements thanks to technology. </li>
                             <li>The first MRI machine was created by Raymond Damadian in 1997</li>
@@ -125,10 +171,11 @@
             </div>
         </div>
     </div>
+
     
     
     
-    <div class="container">
+    <div id="problem" class="container">
         <div class= "col">
             <h3>Problem</h3>
             <p>MRI scans can transmits radiation to someone when it is being used.</p>
@@ -139,18 +186,20 @@
         </div>
     </div>
 
-   <div class= "container">
+   <div id="improvements" class= "container">
        <div clss="col">
-           <h3>Improvements Made</h3>
-           <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" type="button">Skills</button>
-              <button class="btn btn-primary" type="button">Types of scans</button>
-        </div>
+         <h3>Improvements Made</h3>
+            <div class="d-grid gap-2">
+                 <button class="btn btn-dark" type="button">Skills</button>
+                  <button class="btn btn-dark" type="button">Types of scans</button>
+            </div>
        </div>
    </div>
+    
+ 
    
    
-   <div class= "container">
+   <div id="beforeandnow" class= "container">
        <div class="col">
            <h3> Before and Now</h3>
                 <img src="images/old.jpg" alt="old mri" width="300" height="200">
@@ -159,7 +208,7 @@
    </div>
    
    
-   <div class="container">
+   <div id="solutions" class="container">
        <div class="col">
            <h3>Possible Solution</h3>
                <dl>
