@@ -20,22 +20,7 @@
              background:rgba(0,0,0,0.6);
          }
          
-         .carousel-caption {
-             bottom: 200px;
-         }
 
-         .carousel-caption h5{
-             font-weight:700;
-             font-size: 100px;
-             font-family: poppins;
-         }
-         
-         .carousel-caption p{
-             font-weight:200;
-             font-size: 25px;
-            
-            
-         }
          
          .carousel-inner {
              padding-bottom:0 !important;
@@ -61,13 +46,13 @@
         
          #problem {
             font-family: PTSerif;
-             background-color: #6F91A6;
+             background-color: #ADCCD9;
              margin-top:35px;
             
         }
          #improvements {
             font-family: PTSerif;
-             background-color: #689BA6;
+             background-color: #ADCCD9;
              margin-top:35px;
              
         }
@@ -80,7 +65,7 @@
         }
          #solutions {
             font-family: PTSerif;
-             background-color:#6F91A6;
+             background-color:#ADCCD9;
              margin-top:35px;
     
         }
@@ -92,6 +77,22 @@
         }
           
           @media (min-width:1200px) {
+                .carousel-caption {
+             bottom: 200px;
+         }
+
+         .carousel-caption h5{
+             font-weight:700;
+             font-size: 100px;
+             font-family: poppins;
+         }
+         
+         .carousel-caption p{
+             font-weight:200;
+             font-size: 25px;
+            
+            
+         }
               
           }
 
@@ -185,13 +186,59 @@
     </div>
 
    <div id="improvements" class= "container">
-       <div clss="col">
-         <h3>Improvements Made</h3>
+       <div class="col">
+         <h3 style="text-align:center">Improvements Made</h3>
             <div class="d-grid gap-2">
-                 <button class="btn btn-dark" type="button">Skills</button>
-                  <button class="btn btn-dark" type="button">Types of scans</button>
+    
+                  <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Skills</a>
+                  <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Types of scans</button>
+              
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        <h3 style="text-align:center">Skills</h3>
+                          <dt>
+                          <dl>Image Quality</dl>
+                                <dd style='display:list-item;'>Improving picture quality for more accurate scans</dd>
+                            
+                           <strong><dl>Magnetic Strength</dl></strong>
+                                <dd style='display:list-item;'>The Machines Shape and structure has changed so that patients who may be overweight or have claustrophobic can feel more comfortable</dd>
+                            
+                            <strong><dl>Lung MRI</dl></strong>
+                                <dd style='display:list-item;'>Before a MRI could not be done on lungs but thanks to new Technology a Lung MRI is possible</dd>
+                            
+                            <strong><dl>Faster scans</dl></strong>
+                                <dd style='display:list-item;'>The first MRI scan ever took 5 hours and now it only takes about about only 15 to 90 minutes which is a big change</dd>
+                          </dt>
+                     
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                          <h3 style="text-align:center">Types of Scans</h3>
+                              <dt>
+                                  <dl>Traditional Closed MRI</dl>
+                                      <dd style='display:list-item;'>This is the Traditional way of doing a MRI where you lay on your back in a small tube</dd>
+                                      <dd><img src="images/traditinoal.jpg" class="img-thumbnail" alt="Traditional mri"></dd>
+                                      
+                               <strong><dl>Open MRI</dl></strong>
+                                      <dd style='display:list-item;'>This way of doing an MRI allows you to have more space around you instead of being in tight small space</dd>
+                                      <dd><img src="images/BVOpen.png" class="img-thumbnail" alt="Open mri"></dd>
+                                      
+                                 <strong><dl>Stand-Up MRI</dl></strong>
+                                      <dd style='display:list-item;'>Allows the patient to stand up if they don't feel comfortable lying down</dd>
+                                      <dd><img src="images/Upright.jpg" class="img-thumbnail" alt="Standup mri"></dd>
+                                  
+                              </dt>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
-       </div>
+       </div>            
    </div>
     
  
