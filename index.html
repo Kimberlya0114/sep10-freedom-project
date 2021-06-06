@@ -12,7 +12,7 @@
             /* CSS */
 
          .carousel-item {
-             opacity:0.9;
+             opacity:0.8;
              top:0;
              bottom:0;
              left:0;
@@ -35,7 +35,7 @@
         
         .container{
             padding-top:45px!important;
-            padding-bottom:25px;
+            padding-bottom:25px!important;
         }
         
         #content {
@@ -85,11 +85,11 @@
             padding:25px;
           
         } 
-            
-          
+   
           @media (min-width:1200px) {
-        
-        .carousel-caption {
+              
+              
+           .carousel-caption {
              bottom: 200px;
          }
 
@@ -103,17 +103,64 @@
          .carousel-caption p{
              font-weight:200;
              font-size: 45px;
-            
-            
+             
          }
+         
+         #content{
+              font-size: 19px;
+             font-family: poppins;
+             
+         }
+            
+        
          
          #problem{
              font-size: 21px;
              font-family: poppins;
          }
+         
+         #solutions{
+             font-family: poppins;
+         }
       
               
         }
+        
+         @media (max-width:1200px) {
+              
+              
+           .carousel-caption {
+             bottom: 50px;
+         }
+
+         .carousel-caption h5{
+             font-weight:700;
+             font-size: 60px;
+             font-family: poppins;
+         
+         }
+         
+         .carousel-caption p{
+             font-weight:200;
+             font-size: 15px;
+             
+         }
+         
+         }
+      
+         @media (max-width: 768px) { 
+             
+            #scani{
+                width:400px;
+            }
+            
+            #iproblem{
+                width:430px;
+                padding:10px;
+            }
+         }
+    
+      
       
         </style>
 
@@ -137,7 +184,7 @@
     
     
     
-       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+       <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class= "navbar">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -172,7 +219,7 @@
 
     <div id="content" class="container"> 
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
+            <div class="col">
                 <h3>Context</h3>
                         <ul>
                             <li>Medical equipment has been around for hundreds of years, but the MRI machine has only been around for a few years, so it still has some issues that can be resolved, but it has also made many improvements thanks to technology. </li>
@@ -183,7 +230,9 @@
                         </ul>
                 </div>
                 <div class="col">
-                    <img src="images/scan.jpg" alt="Mri scans" width="567" hight="100">
+                    <div class="container-fluid">
+                        <img id="scani" src="images/scan.jpg" alt="Mri scans" width="567" hight="100">
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,12 +244,12 @@
     <div id="problem" class="container">
         <div class= "row">
             <div class="col">
-                 <img src="images/problem.jpg" alt="scan problem" width="600">
+                 <img id="iproblem" src="images/problem.jpg" alt="scan problem" width="600">
             </div>
             <div class= "col">
                 <h2 style="text-align:left"><u>Problem</u></h2>
                 <p style="color:darkgreen">MRI scans can transmits radiation to someone when it is being used.</p>
-                <p>For instance, in this image to the left, you can see that there are radio frequency coils that are going to the patient and as this is happinig radiation is getting transmitting to the patient.</p> 
+                <p>For instance, in this image you can see that there are radio frequency coils that are going to the patient and as this is happinig radiation is getting transmitting to the patient.</p> 
                 <p>Even though radio frequency coils do not transmit a lot of radiation, they do transmit radition, which is bad because it can cause people to have serious health problems such as cancer and cardiovascular disease.</p>
             </div>
         </div>
@@ -286,13 +335,19 @@
    
    <div id="solutions" class="container">
        <div class="col">
-           <h3>Possible Solution</h3>
-               <dl>
-                   <dd>When an MRI machine is used, it automatically opens a shield protector to protect the patient from the radiation that the machine emits.</dt>
-                   <dd>Technology will then be required to program the MRI Machine's software so that it knows when to open the shield.
-                   </dd>
-                   <dd>The shield will be made of the elements tungsten and bismuth because these elements can block radiation.</dd>
-               </dl>
+           <h3 style="text-align:center"><u>Possible Solution</u></h3>
+               <p style="text-align:center">This is my idea for how we can make Mri’s safer</p>
+              
+                   <dl>
+                    <strong> <dd style="color:darkgreen">My concept is for a Mri machine that, when activated, opens a shield protector, blocking any radiation emitted by the machine.</dd></br></strong>
+                      <li><u>Technology</u> will play an important role in the solution for Mri Machines because they will need to be programmed so that they know when to open the shield protector when the scan begins.</li></br>
+                       
+                       <li>So, in order to make the shield a radiation blocker, we'd need to use materials containing the elements tungsten and bismuth, and the reason I chose these specific elements is that both of these elements can block radiation.</li></br>
+                       
+                       <li>Now you may be wondering how the elements Tungsten and Bismuth block radiation, well the element Tungsten has an extremely high density and is among one of the most dense of all metals and the element Bismuth is good at shielding against Ionizing radiation like gamma rays can manufactured quickly, making it a good material to be used in medical imaging.</li></br>
+                       
+                       <li>I also imagined that the shield protector will look like a transparent thin glass that is still very strong, much like the element tungsten, because you still need to see the patient in order to get a scan, this shield will need to be transparent.</li></br>
+                   </dl>
        </div>
    </div>
 
